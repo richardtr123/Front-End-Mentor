@@ -1,0 +1,120 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+}
+:root{
+    font-family: 'Karla',sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+a{
+    text-decoration: none;
+}
+a:hover{
+    text-decoration: underline;
+}
+
+body{
+    background:rgb(150, 182, 241);
+    overflow: hidden;
+}
+
+.container{
+    position: relative;
+    margin: 0 auto;
+    max-width: 1920px;
+    width: 90%;
+    height: 100vh;
+}
+
+.card{
+    position: absolute;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 700px;
+    display: grid;
+    grid-template-columns:1fr 1fr;
+    grid-template-rows: 1span 1span;
+    
+}
+
+.comunidad{
+    height: auto;
+    padding: 32px 48px;
+    grid-column: 1/3;
+    background:azure;
+}
+.comunidad__title{
+    color:hsl(179, 62%, 43%);
+}
+.comunidad__garantia{
+    font-weight: 700;
+    color: hsl(71, 73%, 54%);
+}
+.comunidad__descripcion{
+    margin: 10px 0;
+    color: hsl(218, 22%, 67%);
+}
+
+.suscripcion{
+    padding: 24px 48px;
+    grid-column: 1/2;
+    grid-row: 2/3;
+    background:hsl(179, 62%, 43%);
+}
+.suscripcion__title{
+    font-weight: 700;
+    color:hsl(204, 43%, 93%) ;
+}
+.suscripcion__price{
+    color: hsl(204, 43%, 93%);
+    font-weight: 700;
+    margin-right: 5px;
+    font-size: 30px;
+}
+.suscripcion__time{
+    font-size: 16px;
+    vertical-align:super;
+    color: hsl(203, 16%, 84%);
+}
+.suscripcion__descripcion{
+    font-size: 14px;
+    margin-top: 15px;
+    color: hsl(204, 43%, 93%);
+}
+.suscripcion__boton{
+    text-align: center;
+    border-radius: 5px;
+    font-weight: 400;
+    margin-top:35px;
+    display: block;
+    color:hsl(204, 43%, 93%);
+    background: hsl(71, 73%, 54%);
+    padding: 15px 30px 15px 30px;
+    box-shadow: 0px 4px 4px 5px rgba(0,0,0,0.16);
+    -webkit-box-shadow: 0px 4px 4px 5px rgba(0,0,0,0.16); 
+}
+.about{   
+    padding: 24px 48px;
+    grid-column: 2/3;
+    grid-row: 2/3;
+    background:hsl(179, 60%, 47%);
+}
+.about__title{
+    font-weight: 700;
+    color: hsl(204, 43%, 93%);
+}
+.about__references{
+    margin: 5px;
+    color: hsl(206, 35%, 91%);
+}
+
+@media (max-width:375px) {
+    .card{
+        width: 330px;
+        display: flex;
+        flex-flow: column nowrap;
+    }
+}
