@@ -1,7 +1,35 @@
-*{
-    box-sizing: border-box;
-    padding: 0;
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
 }
+/* Remove default margin */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+figure,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+html:focus-within {
+    scroll-behavior: smooth;
+  }
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+
+
 :root{
     font-family: 'Karla',sans-serif;
     font-size: 16px;
@@ -16,7 +44,7 @@ a:hover{
 }
 
 body{
-    background:rgb(150, 182, 241);
+    background:#E4EDF2;
     overflow: hidden;
 }
 
@@ -47,9 +75,11 @@ body{
     background:azure;
 }
 .comunidad__title{
+    margin: 0px 0px 30px 0px;
     color:hsl(179, 62%, 43%);
 }
 .comunidad__garantia{
+    margin: 0px 0px 30px 0px;
     font-weight: 700;
     color: hsl(71, 73%, 54%);
 }
@@ -58,13 +88,14 @@ body{
     color: hsl(218, 22%, 67%);
 }
 
-.suscripcion{
-    padding: 24px 48px;
+.suscripcion{    
+    padding: 48px 52px;
     grid-column: 1/2;
     grid-row: 2/3;
     background:hsl(179, 62%, 43%);
 }
 .suscripcion__title{
+    margin: 0px 0px 24px 0px;
     font-weight: 700;
     color:hsl(204, 43%, 93%) ;
 }
@@ -80,9 +111,10 @@ body{
     color: hsl(203, 16%, 84%);
 }
 .suscripcion__descripcion{
+    font-weight: 700;
     font-size: 14px;
     margin-top: 15px;
-    color: hsl(204, 43%, 93%);
+    color: hsl(203, 21%, 88%);
 }
 .suscripcion__boton{
     text-align: center;
@@ -97,13 +129,14 @@ body{
     -webkit-box-shadow: 0px 4px 4px 5px rgba(0,0,0,0.16); 
 }
 .about{   
-    padding: 24px 48px;
+    padding: 48px 52px;
     grid-column: 2/3;
     grid-row: 2/3;
     background:hsl(179, 60%, 47%);
 }
 .about__title{
     font-weight: 700;
+    margin: 0 0 20px 0;
     color: hsl(204, 43%, 93%);
 }
 .about__references{
