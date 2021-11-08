@@ -45,7 +45,7 @@ a:hover{
 
 body{
     background:#E4EDF2;
-    overflow: hidden;
+    overflow: auto;
 }
 
 .container{
@@ -145,6 +145,15 @@ body{
 }
 
 @media (max-width:375px) {
+    body{
+        
+        position:static;
+        overflow-y: scroll;
+    }
+    .container{
+        margin:150px auto;
+        position:sticky;
+    }
     .card{
         width: 330px;
         display: flex;
