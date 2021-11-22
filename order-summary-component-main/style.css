@@ -1,0 +1,225 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@400;700&display=swap');
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+figure,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+ul[role='list'],
+ol[role='list'] {
+  list-style: none;
+}
+
+a{
+    text-decoration: none;
+}
+a:hover{
+    text-decoration: underline;
+}
+
+:root{
+    font-family: 'Red Hat Display', sans-serif;
+
+    --font-title: hsl(223, 47%, 23%);
+    --font-color:hsl(224, 23%, 55%);
+    --background:hsl(225, 100%, 94%);
+    --background-card:white;
+    --background-plan:hsl(225, 100%, 98%);
+    --urls-1:hsl(245, 75%, 52%);
+    --urls-2:hsl(224, 23%, 55%);
+    --shadow:hsl(225, 54%, 88%);
+    --state:url('images/sun.png');
+    --background-state:hsl(225, 100%, 98%);
+}
+
+body {
+  position: relative;
+    font-size: 16px;
+    background-color: var(--background);
+    min-height: 100vh;
+    text-rendering: optimizeSpeed;
+    line-height: 1.5;
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.contenedor{   
+    height:auto;
+    position: relative;
+}
+
+.card{    
+    border-radius: 15px;
+    width: 350px;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    background: var(--background-card);
+    box-shadow: 0px 20px 15px 5px var(--shadow);
+}
+
+.card__header{
+    border-radius: 15px 15px 0 0;
+    display: block;
+    width: 350px;
+}
+
+.card__texts{
+  padding:30px 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-flow: column nowrap;
+}
+
+.card__title{
+  color:  var(--font-title);
+  font-weight: 900;
+  margin-bottom: 15px;
+}
+  
+.description{
+  font-weight: 500;
+  font-size: 14px;
+  color:var(--font-color);
+  text-align: center;
+}
+
+.plan{
+  font-size: 14px;
+  margin: 0 30px;
+  border-radius: 15px 15px;
+  height: 80px;
+  background:var(--background-plan);
+  display: flex;
+  align-items: center;
+  justify-content:space-around;
+  margin-bottom: 25px;
+}
+
+.plan__icon{
+  padding: 0px 40px;
+  display: block;
+  width: 40px;
+  height: 40px;
+  background: url('images/icon-music.svg') no-repeat center center;
+  background-size: 40px;
+}
+.plan__text{
+  font-weight: 500;
+  width: 150px;
+  color: var(--font-color);
+}
+
+.plan__plan{
+  font-weight: 900;
+  color: var(--font-title);
+}
+
+.plan__enlace{
+  padding: 0 20px 0 0;
+  text-decoration: underline;
+  color: var(--urls-1);
+  font-weight: 500;
+}
+
+.card__payment{
+  border: none;
+  font-size: 14px;
+  color: var(--background);
+  font-weight: 700;
+  border-radius: 10px 10px 10px 10px;
+  text-align: center;
+  padding: 10px 80px;
+  display: block;
+  margin-bottom: 20px;
+}
+
+.card__payment__active{
+  box-shadow: 0px 8px 15px 5px var(--shadow);
+  background:var(--urls-1);
+}
+.card__cancel{
+  font-size: 14px;
+  font-weight: 900;
+  color:var(--urls-2) ;
+  margin-bottom: 30px;
+}
+
+.attribution {
+    bottom: 0;
+   position: absolute;
+   font-size: 11px; 
+   text-align: center; 
+}
+.attribution a { 
+  color: hsl(228, 45%, 44%); 
+}
+
+.button{
+  cursor: pointer;
+  border-radius: 75px;
+  right: 25px;
+  bottom: 25px;
+  width: 75px;
+  height: 75px;
+  display: block;
+  position:  absolute;
+  background: var(--state),var(--background-state); 
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 50px;
+}
+
+
+.button .bdark{
+  cursor: pointer;
+  border-radius: 75px;
+  right: 25px;
+  bottom: 25px;
+  width: 75px;
+  height: 75px;
+  display: block;
+  position:  absolute;
+  background: url('images/moon.png'),hsl(223, 47%, 23%); 
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 50px;
+}
+
+.darkmode{
+  --state:url('images/moon.png');
+  --font-title: #f0f0eb;
+  --font-color:#f0f0eb;
+  --background:#172231;
+  --shadow: hsl(223, 47%, 23%);
+  --background-card:#172231;
+  --background-plan:#303f57;
+  --urls-1:#d6cfb3;
+  --urls-2:#7aa5aa;
+  --background-state:hsl(225, 22%, 28%);
+}
