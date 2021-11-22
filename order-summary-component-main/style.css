@@ -171,13 +171,14 @@ body {
 }
 
 .attribution {
+  color: var(--font-title);
     bottom: 0;
    position: absolute;
    font-size: 11px; 
    text-align: center; 
 }
 .attribution a { 
-  color: hsl(228, 45%, 44%); 
+  color:var(--urls-1); 
 }
 
 .button{
@@ -216,7 +217,7 @@ body {
   --font-title: #f0f0eb;
   --font-color:#f0f0eb;
   --background:#172231;
-  --shadow: hsl(223, 47%, 23%);
+  --shadow: hsl(217, 58%, 18%);
   --background-card:#172231;
   --background-plan:#303f57;
   --urls-1:#d6cfb3;
