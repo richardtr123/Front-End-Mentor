@@ -197,20 +197,7 @@ body {
 }
 
 
-.button .bdark{
-  cursor: pointer;
-  border-radius: 75px;
-  right: 25px;
-  bottom: 25px;
-  width: 75px;
-  height: 75px;
-  display: block;
-  position:  absolute;
-  background: url('images/moon.png'),hsl(223, 47%, 23%); 
-  background-repeat: no-repeat;
-  background-position: center center;
-  background-size: 50px;
-}
+
 
 .darkmode{
   --state:url('images/moon.png');

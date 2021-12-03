@@ -1,0 +1,182 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@400;700&display=swap');
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+hr,
+figure,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+ul[role='list'],
+ol[role='list'] {
+  list-style: none;
+}
+
+a{
+    text-decoration: none;
+}
+a:hover{
+    text-decoration: underline;
+}
+
+:root{
+  --background: hsl(217, 54%, 11%);
+  --background_card: hsl(216, 50%, 16%);
+  --font_header:white;
+  --font_primary_1:hsl(215, 51%, 70%);
+}
+
+body{
+  font-family: 'Red Hat Display', sans-serif;
+  font-size: 16px;
+  position: relative;
+  font-size: 16px;
+  background-color: var(--background);
+  min-height: 100vh;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+  display: flex; 
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.container{
+  height: auto;
+  position: relative;
+}
+
+.card{
+  width:300px;
+  border-radius:15px 15px 15px 15px ;
+  background: var(--background_card);
+  
+}
+
+.card__container{
+  color: hsl(215, 51%, 70%);
+  padding: 20px;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.text__title{
+  font-size: 18px;
+  margin: 15px 0px;
+  color: whitesmoke;
+  font-weight: 600;
+}
+
+.text__desc{
+  color:hsla(215, 52%, 70%, 0.828);
+  font-weight: 300;
+}
+
+.url{
+  width: 260px;
+  height: 260px;
+}
+
+.url__shadow{
+  width: 260px;
+  height: 260px;
+  border-radius:10px;
+}
+.url__shadow:hover{
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-image: url(images/icon-view.svg);
+  background-color:hsla(178, 100%, 50%, 0.486) ;
+}
+.url__imagen{
+  background: url(images/image-equilibrium.jpg) no-repeat center center;
+  background-size: contain;
+  width: 260px;
+  height: 260px;
+  border-radius:10px;
+}
+
+.details{
+  margin: 20px 0px;
+  width: 100%;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+}
+
+.price__logo, .temp__logo{
+  margin-right: 3px;
+  vertical-align:-2.5px;
+}
+
+.temp__temp, .price__price{
+  font-weight: 400;
+}
+
+.price__price{
+  color: hsl(178, 100%, 50%);
+}
+
+.card__line{
+  color:hsl(215, 32%, 27%);
+}
+
+.autor{
+  margin-top: 15px;
+  width: 100%;
+}
+
+.autor__profile{  
+  width: 30px;
+  border-radius: 40px;
+  border:hsl(0, 0%, 100%) .5px solid;
+  margin-right: 15px;
+  vertical-align: -10px;
+}
+.autor__desc{
+  font-weight: 300;
+}
+
+.autor__enlace,.text__title{
+  cursor: pointer;
+  color:  hsl(0, 0%, 100%);
+}
+
+.autor__enlace:hover,.text__title:hover{
+  text-decoration: none;
+  color: hsl(178, 100%, 50%);
+} 
+
+.attribution{
+  font-size: 11px; 
+  text-align: center;
+  color: white;
+  position: fixed;
+  bottom: 20px;
+}
+.attribution a{
+  color: bisque;
+}
+
